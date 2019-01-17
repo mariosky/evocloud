@@ -1,8 +1,10 @@
 import time
+import os
 import json
 from google.cloud import pubsub_v1
 
-project_id = "evocloud"
+
+project_id = os.environ["PROJECT_ID"]
 topic_name = "population-objects"
 
 

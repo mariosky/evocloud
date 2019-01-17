@@ -1,12 +1,12 @@
 import google_producer
-#import kafka_controller
+import google_controller
 import time
 #import process_logs
 
 
 
 conf = {
-    2: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':20, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':1 },
+    2: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':20, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':2 },
     3: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':30, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':2 },
     5: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':4 },
     10:{ 'NGEN':50, 'POP_SIZE': 200, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':4 },
@@ -17,7 +17,7 @@ conf = {
      #For paper:
     'FUNCTIONS' : (3,),
     'DIMENSIONS' : (2,),       #(2,3,5,10,20)
-    'INSTANCES' : range(1)    #range(1,6)+range(41, 51)
+    'INSTANCES' : range(1,3)    #range(1,6)+range(41, 51)
 
 }
 #Example from EvoSpace
@@ -84,7 +84,8 @@ def experiment(conf):
                 #kafka_producer.send_messages(kafka_messages,'populations-topic')
                 print ("First Messages Sent")
                 print ("Begin Message Loop")
-                #kafka_controller.experiment(env)
+
+                google_controller.experiment(env)
                 print ("Done")
 
 
