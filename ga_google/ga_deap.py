@@ -21,9 +21,9 @@ class GA_Worker:
         self.evospace_sample = {'sample':conf['population']}
 
     def setup(self):
-        if "FitnessMin" not in globals():
+        if "FitnessMin" not in dir(creator):
             creator.create("FitnessMin", base.Fitness, weights=(-1.0,))     #Minimizing Negative
-        if "Individual" not in globals():
+        if "Individual" not in dir(creator):
             creator.create("Individual", list, typecode='d', fitness=creator.FitnessMin)
         self.toolbox = base.Toolbox()
         self.toolbox.register("attr_float", random.uniform, -5, 5)
