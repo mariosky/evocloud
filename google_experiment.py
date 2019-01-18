@@ -1,8 +1,16 @@
 import google_producer
 import google_controller
 import time
+import redis
+import os
 #import process_logs
 
+
+
+
+HOST = os.environ['REDIS_HOST']
+PORT = os.environ['REDIS_PORT']
+r = redis.Redis(host=HOST, port=PORT)
 
 
 conf = {
@@ -86,7 +94,12 @@ def experiment(conf):
                 print ("Begin Message Loop")
 
                 google_controller.experiment(env)
-                print ("Done")
+
+                #Block until this experiment is done, redis queue, time_out
+                task = r.blpop("experiment_finished", 100)
+
+
+                print (task, "Done")
 
 
 

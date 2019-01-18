@@ -26,6 +26,8 @@ def callback(message):
 
 
 
+
+
 subscriber.subscribe(subscription_path, callback=callback)
 
 # The subscriber is non-blocking. We must keep the main thread from
