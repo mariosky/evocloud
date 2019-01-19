@@ -15,7 +15,7 @@ def callback(message_future):
         print('Publishing message on {} threw an Exception {}.'.format(
             topic_name, message_future.exception()))
     else:
-        print(message_future.result())
+        print("Message OUT:", message_future.result())
 
 
 def send_messages(messages, project_id="evocloud",topic_name = "population-objects"):
@@ -32,5 +32,3 @@ def send_messages(messages, project_id="evocloud",topic_name = "population-objec
         # When you publish a message, the client returns a Future.
         message_future = publisher.publish(topic_path, data=data)
         message_future.add_done_callback(callback)
-
-        print('Published message IDs:')

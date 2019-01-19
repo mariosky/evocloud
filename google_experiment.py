@@ -3,7 +3,7 @@ import google_controller
 import time
 import redis
 import os
-#import process_logs
+import process_logs
 
 
 
@@ -25,7 +25,7 @@ conf = {
      #For paper:
     'FUNCTIONS' : (3,),
     'DIMENSIONS' : (2,),       #(2,3,5,10,20)
-    'INSTANCES' : range(1,3)    #range(1,6)+range(41, 51)
+    'INSTANCES' : range(1,6)    #range(1,6)+range(41, 51)
 
 }
 #Example from EvoSpace
@@ -96,7 +96,7 @@ def experiment(conf):
                 google_controller.experiment(env)
 
                 #Block until this experiment is done, redis queue, time_out
-                task = r.blpop("experiment_finished", 100)
+                task = r.blpop("experiment_finished", 0)
 
 
                 print (task, "Done")
@@ -108,8 +108,9 @@ def experiment(conf):
 
 
 if __name__ == '__main__':
-    DESTINATION_PATH = r'/Users/mariogarcia-valdez/Desktop/CocoExp/'
-    PROJECT_PATH = r'/Users/mariogarcia-valdez/evocloud/'
-    experiment(conf)
+    #DESTINATION_PATH = r'/Users/mariogarcia-valdez/Desktop/CocoExp/'
+    #PROJECT_PATH = r'/Users/mariogarcia-valdez/evocloud/'
+    #experiment(conf)
     #data_folder = process_logs.process_logs(conf['EXPERIMENT_ID'])
+    data_folder = process_logs.process_logs(1547876026)
     #print ("python -m cocopp -o "+ DESTINATION_PATH + str(conf['EXPERIMENT_ID'])+ " " + PROJECT_PATH + data_folder[2:])

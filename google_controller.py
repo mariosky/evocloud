@@ -4,6 +4,7 @@ import os
 import asyncio
 import redis
 
+import google_producer
 
 HOST = os.environ['REDIS_HOST']
 PORT = os.environ['REDIS_PORT']
@@ -28,22 +29,17 @@ subscription_path = subscriber.subscription_path(
 
 
 
+
+
 def cxBestFromEach(pop1, pop2, key = lambda p: p['fitness']['score']):
     # small is better
     pop1.sort(key=key)
     pop2.sort(key=key)
     size = min(len(pop1), len(pop2))
-    print(size)
-    print(pop1)
-    print(pop2)
 
     cxpoint = (size - 1) // 2
-    print(cxpoint)
-
-    print(pop1[cxpoint:])
 
     pop1[cxpoint:] = pop2[:cxpoint+2]
-    #a[3:] = b[:3+2]
     return pop1
 
 
@@ -52,29 +48,30 @@ def cxBestFromEach(pop1, pop2, key = lambda p: p['fitness']['score']):
 
 queue = []
 count = 0
+current_problem_id = None
 
 
 async def print_message(message, loop, env):
     global count, queue
 
-
-
     pop = json.loads(message.data)
 
-    # max_messages = env["problem"]["max_iterations"]
-    max_messages = 2
-    print('max_messages={0} count={1}'.format(max_messages, count))
+    max_messages = env["problem"]["max_iterations"]
+    #max_messages = 2
 
 
     # Counter for experiments, some times we receive from earlier problems
     # Set to zero if not exists
-    problem_id = env["problem"]["problem_id"]
+    problem_id = current_problem_id
 
-    print( "problem_id", env["problem"]["problem_id"],  pop["problem"]["problem_id"])
+    print('MESSAGE IN: ENV:{0} POP={1} count={2}'.format(problem_id, pop["problem"]["problem_id"],
+                                                          count))
+
     if problem_id == pop["problem"]["problem_id"]:
         count += 1
         queue.append(pop)
 
+        print(len(queue))
         if len(queue) > 1:
             print("queue")
             # get other
@@ -92,8 +89,10 @@ async def print_message(message, loop, env):
             print('.',)
 
         # Only return if we are in the same experiment
-        print("SEND MESSAGGE HERE")
-        print(json.dumps(pop ))
+        print("Sending Message...", pop["problem"]["problem_id"])
+        #print([pop])
+        google_producer.send_messages([pop])
+
 
         # Log any way, there is no problem if we evaluate more
         if (REDIS_LOG):
@@ -101,25 +100,30 @@ async def print_message(message, loop, env):
             redis_log.log_to_redis_coco(pop)
         else:
             print("old", pop["problem"]["problem_id"])
+    else:
+        print("MESSAGE FROM OTHER EXPERIMENT", env["problem"]["problem_id"], pop["problem"]["problem_id"])
+
+
 
 
 
 
     if count >= max_messages:
-        print("stop")
+        print("Stoping Experiment")
         loop.stop()
         r.rpush('experiment_finished', count)
 
 
-    print('finished',count)
+    print('Message Processed, count:',count)
     message.ack()
 
 
 
 def experiment(env):
-    global count, queue
+    global count, queue, current_problem_id
     count = 0
     queue = []
+    current_problem_id = env["problem"]["problem_id"]
 
 
     loop = asyncio.get_event_loop()
