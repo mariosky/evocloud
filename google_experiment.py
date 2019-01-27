@@ -13,19 +13,29 @@ PORT = os.environ['REDIS_PORT']
 r = redis.Redis(host=HOST, port=PORT)
 
 
+#conf = {
+#    2: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':20, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':2 },
+#    3: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':30, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':2 },
+#    5: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':4 },
+#    10:{ 'NGEN':50, 'POP_SIZE': 200, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':4 },
+#    20:{ 'NGEN':50, 'POP_SIZE': 200, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':8 },
+#    40:{ 'NGEN':50, 'POP_SIZE': 200, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':16 },
+
+
+
 conf = {
     2: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':20, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':2 },
     3: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':30, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':2 },
     5: { 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':4 },
-    10:{ 'NGEN':50, 'POP_SIZE': 200, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':4 },
-    20:{ 'NGEN':50, 'POP_SIZE': 200, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':8 },
-    40:{ 'NGEN':50, 'POP_SIZE': 200, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':16 },
+    10:{ 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':8 },
+    20:{ 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':16 },
+    40:{ 'NGEN':50, 'POP_SIZE': 100, 'MAX_ITERATIONS':25, 'MESSAGES_HUB_PSO':0, 'MESSAGES_HUB_GA':32 },
 
     'EXPERIMENT_ID' : int(time.time()),
      #For paper:
     'FUNCTIONS' : (3,),
-    'DIMENSIONS' : (2,),       #(2,3,5,10,20)
-    'INSTANCES' : range(1,6)    #range(1,6)+range(41, 51)
+    'DIMENSIONS' : (10,20,40),       #(2,3,5,10,20)
+    'INSTANCES' : range(1,2,3)    #range(1,6)+range(41, 51)
 
 }
 #Example from EvoSpace
@@ -108,9 +118,8 @@ def experiment(conf):
 
 
 if __name__ == '__main__':
-    #DESTINATION_PATH = r'/Users/mariogarcia-valdez/Desktop/CocoExp/'
-    #PROJECT_PATH = r'/Users/mariogarcia-valdez/evocloud/'
-    #experiment(conf)
-    #data_folder = process_logs.process_logs(conf['EXPERIMENT_ID'])
-    data_folder = process_logs.process_logs(1547876026)
-    #print ("python -m cocopp -o "+ DESTINATION_PATH + str(conf['EXPERIMENT_ID'])+ " " + PROJECT_PATH + data_folder[2:])
+    DESTINATION_PATH = r'/Users/mariogarcia-valdez/Desktop/CocoExp/'
+    PROJECT_PATH = r'/Users/mariogarcia-valdez/evocloud/'
+    experiment(conf)
+    data_folder = process_logs.process_logs(conf['EXPERIMENT_ID'])
+    print ("python -m cocopp -o "+ DESTINATION_PATH + str(conf['EXPERIMENT_ID'])+ " " + PROJECT_PATH + data_folder[2:])
