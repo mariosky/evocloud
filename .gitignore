@@ -6,7 +6,7 @@ venv
 *~
 .idea
 
-experiment_data
+#experiment_data
 
 # MAC
 .DS_Store

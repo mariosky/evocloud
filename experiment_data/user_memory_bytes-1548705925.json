@@ -1,0 +1,183 @@
+{
+  "timeSeries": [
+    {
+      "metric": {
+        "labels": {
+          "trigger_type": "google.pubsub.topic.publish",
+          "memory": "256"
+        },
+        "type": "cloudfunctions.googleapis.com/function/user_memory_bytes"
+      },
+      "resource": {
+        "type": "cloud_function",
+        "labels": {
+          "region": "us-central1",
+          "function_name": "main",
+          "project_id": "evocloud"
+        }
+      },
+      "metricKind": "DELTA",
+      "valueType": "DISTRIBUTION",
+      "points": [
+        {
+          "interval": {
+            "startTime": "2019-01-28T20:06:00Z",
+            "endTime": "2019-01-28T20:07:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "count": "118",
+              "mean": 101655118.10169491,
+              "sumOfSquaredDeviation": 68157798169248856,
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 110,
+                  "growthFactor": 1.05,
+                  "scale": 10485760
+                }
+              },
+              "bucketCounts": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "5",
+                "12",
+                "0",
+                "52",
+                "4",
+                "0",
+                "15",
+                "5",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "12",
+                "13"
+              ]
+            }
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-01-28T20:05:00Z",
+            "endTime": "2019-01-28T20:06:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "count": "32",
+              "mean": 112304640,
+              "sumOfSquaredDeviation": 30371779386015752,
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 110,
+                  "growthFactor": 1.05,
+                  "scale": 10485760
+                }
+              },
+              "bucketCounts": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "9",
+                "0",
+                "8",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "8",
+                "7"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
