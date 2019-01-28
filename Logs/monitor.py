@@ -1,8 +1,16 @@
 from requests_oauthlib import OAuth2Session
 import os
+import urllib
 
 client_id = os.environ["CLIENT_ID"]
 client_secret = os.environ["CLIENT_SECRET"]
+
+EXPERIMENT_ID = '1548705925'
+START='2019-01-28T20:05:24.000000Z'
+END=  '2019-01-28T20:07:20.000000Z'
+METRIC='user_memory_bytes'
+# 'execution_times', 'execution_count','user_memory_bytes',
+
 
 redirect_uri = "https://localhost"
 scope = 'https://www.googleapis.com/auth/monitoring'
@@ -30,7 +38,12 @@ def get_token():
 
 token = get_token()
 
-url_string = 'https://monitoring.googleapis.com/v3/projects/evocloud/timeSeries?filter=metric.type%3D%22cloudfunctions.googleapis.com%2Ffunction%2Fexecution_count%22&interval.endTime=2019-01-22T22%3A28%3A50.996508940Z&interval.startTime=2019-01-12T22%3A28%3A47.364942912Z'
+#url_string = 'https://monitoring.googleapis.com/v3/projects/evocloud/timeSeries?filter=metric.type%3D%22cloudfunctions.googleapis.com%2Ffunction%2Fexecution_count%22&interval.endTime=2019-01-22T22%3A28%3A50.996508940Z&interval.startTime=2019-01-12T22%3A28%3A47.364942912Z'
+url_string = 'https://monitoring.googleapis.com/v3/projects/evocloud/timeSeries?filter=metric.type%3D%22cloudfunctions.googleapis.com%2Ffunction%2F{}%22&interval.endTime={}&interval.startTime={}'.format( METRIC, urllib.parse.quote(END),urllib.parse.quote(START))
+
 r = oauth.get(url_string)
 
-print(r.text)
+
+
+with open('../experiment_data/{}-{}.json'.format(METRIC,EXPERIMENT_ID), 'w') as outfile:
+    outfile.write(r.text)

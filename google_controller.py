@@ -3,7 +3,7 @@ import random
 import os
 import asyncio
 import redis
-
+import logging
 import google_producer
 
 HOST = os.environ['REDIS_HOST']
@@ -17,6 +17,10 @@ r = redis.Redis(host=HOST, port=PORT)
 from google.cloud import pubsub_v1
 
 import redis_log
+
+logger = logging.getLogger('google_experiment')
+logger.setLevel(logging.INFO)
+
 from deap.tools.crossover import cxOnePoint
 
 project_id = os.environ["PROJECT_ID"]
@@ -52,6 +56,7 @@ current_problem_id = None
 
 
 async def print_message(message, loop, env):
+
     global count, queue
 
     pop = json.loads(message.data)
@@ -64,44 +69,44 @@ async def print_message(message, loop, env):
     # Set to zero if not exists
     problem_id = current_problem_id
 
-    print('MESSAGE IN: ENV:{0} POP={1} count={2}'.format(problem_id, pop["problem"]["problem_id"],
+    logger.info('MESSAGE IN: ENV:{0} POP={1} count={2}'.format(problem_id, pop["problem"]["problem_id"],
                                                           count))
 
     if problem_id == pop["problem"]["problem_id"]:
         count += 1
         queue.append(pop)
 
-        print(len(queue))
+        #print(len(queue))
         if len(queue) > 1:
-            print("queue")
+            #print("queue")
             # get other
             # other = queue.pop()
             # random from the last 10
             # percentege of length
             other = random.choice(queue)
             # crossover
-            print("crossover", pop['population'],other['population'] )
+            #print("crossover", pop['population'],other['population'] )
             # cxOnePoint(pop['population'], other['population'])
             pop['population'] = cxBestFromEach(pop['population'], other['population'])
 
             # queue.appendleft(other)
             # queue.append(other)
-            print('.',)
+            #print('.',)
 
         # Only return if we are in the same experiment
-        print("Sending Message...", pop["problem"]["problem_id"])
+        logger.info("Sending Message...{}".format( pop["problem"]["problem_id"]))
         #print([pop])
         google_producer.send_messages([pop])
 
 
         # Log any way, there is no problem if we evaluate more
         if (REDIS_LOG):
-            print("saving to redis")
+            logger.info("saving to redis")
             redis_log.log_to_redis_coco(pop)
         else:
-            print("old", pop["problem"]["problem_id"])
+            logger.info("old:{}".format(pop["problem"]["problem_id"]))
     else:
-        print("MESSAGE FROM OTHER EXPERIMENT", env["problem"]["problem_id"], pop["problem"]["problem_id"])
+        logger.info("MESSAGE FROM OTHER EXPERIMENT:{},{}".format( env["problem"]["problem_id"], pop["problem"]["problem_id"]))
 
 
 
@@ -109,12 +114,11 @@ async def print_message(message, loop, env):
 
 
     if count >= max_messages:
-        print("Stoping Experiment")
+        logger.info("Stoping Experiment")
         loop.stop()
         r.rpush('experiment_finished', count)
 
-
-    print('Message Processed, count:',count)
+    logger.info('Message Processed, count:{}'.format(count))
     message.ack()
 
 

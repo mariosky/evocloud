@@ -4,8 +4,13 @@ import time
 import redis
 import os
 import process_logs
+import logging
+import pytz
+import datetime
 
 
+logger = logging.getLogger('google_experiment')
+logger.setLevel(logging.INFO)
 
 
 HOST = os.environ['REDIS_HOST']
@@ -34,10 +39,15 @@ conf = {
     'EXPERIMENT_ID' : int(time.time()),
      #For paper:
     'FUNCTIONS' : (3,),
-    'DIMENSIONS' : (10,20,40),       #(2,3,5,10,20)
-    'INSTANCES' : range(1,2,3)    #range(1,6)+range(41, 51)
+    'DIMENSIONS' : (10, ),       #(2,3,5,10,20)
+    'INSTANCES' : range(1)    #range(1,6)+range(41, 51)
 
 }
+
+fh = logging.FileHandler('experiment_data/{}.log'.format( conf['EXPERIMENT_ID']))
+fh.setLevel(logging.INFO)
+logger.addHandler(fh)
+
 #Example from EvoSpace
 # Parameter configuration for each dimension 10**5 * D
 # 2: 200,000
@@ -71,9 +81,10 @@ def new_populations(env, number_of_pops, n_individuals, dim, lb, ub ):
 def experiment(conf):
     for function in  conf['FUNCTIONS']:
         for dim in conf['DIMENSIONS'] :
-            print ("DIM", dim)
+            logger.info ("DIM:{} ".format( dim))
             for instance in conf['INSTANCES'] :
-                print ("instance:", instance)
+                logger.info ("instance:{}".format(instance))
+
 
                 env = {"problem":
                             {"name": "BBOB",
@@ -100,6 +111,7 @@ def experiment(conf):
                 #Initialize experiment?
                 google_producer.send_messages(google_messages)
                 #kafka_producer.send_messages(kafka_messages,'populations-topic')
+                print(function,dim, instance )
                 print ("First Messages Sent")
                 print ("Begin Message Loop")
 
@@ -120,6 +132,13 @@ def experiment(conf):
 if __name__ == '__main__':
     DESTINATION_PATH = r'/Users/mariogarcia-valdez/Desktop/CocoExp/'
     PROJECT_PATH = r'/Users/mariogarcia-valdez/evocloud/'
+    start_time = datetime.datetime.fromtimestamp(time.time(), pytz.utc)
+    tz = pytz.timezone('UTC')
+    logger.info("Start: {}".format(print( tz.normalize(start_time.astimezone(tz)).strftime('%Y-%m-%dT%H:%M:%S.%fZ'))))
     experiment(conf)
+
+    finish_time = datetime.datetime.fromtimestamp(time.time(), pytz.utc)
+    logger.info("Start: {}".format(print(tz.normalize(finish_time.astimezone(tz)).strftime('%Y-%m-%dT%H:%M:%S.%fZ'))))
+
     data_folder = process_logs.process_logs(conf['EXPERIMENT_ID'])
-    print ("python -m cocopp -o "+ DESTINATION_PATH + str(conf['EXPERIMENT_ID'])+ " " + PROJECT_PATH + data_folder[2:])
+    #print ("python -m cocopp -o "+ DESTINATION_PATH + str(conf['EXPERIMENT_ID'])+ " " + PROJECT_PATH + data_folder[2:])

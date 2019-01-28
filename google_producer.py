@@ -2,7 +2,10 @@ import time
 import os
 import json
 from google.cloud import pubsub_v1
+import logging
 
+logger = logging.getLogger('google_experiment')
+logger.setLevel(logging.INFO)
 
 project_id = os.environ["PROJECT_ID"]
 topic_name = "population-objects"
@@ -12,10 +15,10 @@ topic_name = "population-objects"
 def callback(message_future):
     # When timeout is unspecified, the exception method waits indefinitely.
     if message_future.exception(timeout=30):
-        print('Publishing message on {} threw an Exception {}.'.format(
+        logging.info('Publishing message on {} threw an Exception {}.'.format(
             topic_name, message_future.exception()))
     else:
-        print("Message OUT:", message_future.result())
+        logging.info("Message OUT:", message_future.result())
 
 
 def send_messages(messages, project_id="evocloud",topic_name = "population-objects"):
