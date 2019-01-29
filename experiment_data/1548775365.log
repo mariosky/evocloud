@@ -1,0 +1,450 @@
+Start: None
+DIM:10 
+instance:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548705925-3-0-10 count=0
+MESSAGE FROM OTHER EXPERIMENT:1548775365-3-0-10,1548705925-3-0-10
+Message Processed, count:0
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=0
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:1
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=1
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:2
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=2
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:3
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=3
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:4
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=4
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:5
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=5
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:6
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=6
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:7
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=7
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:8
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=8
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:9
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=9
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:10
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=10
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:11
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=11
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:12
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=12
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:13
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=13
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:14
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=14
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:15
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=15
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:16
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=16
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:17
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=17
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:18
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=18
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:19
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=19
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:20
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=20
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:21
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=21
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:22
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=22
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:23
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=23
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:24
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=24
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:25
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=25
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:26
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=26
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:27
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=27
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:28
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=28
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:29
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=29
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:30
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=30
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:31
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=31
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:32
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=32
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:33
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=33
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:34
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=34
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:35
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=35
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:36
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=36
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:37
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=37
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:38
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=38
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:39
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=39
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:40
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=40
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:41
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=41
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:42
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=42
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:43
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=43
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:44
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=44
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:45
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=45
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:46
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=46
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:47
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=47
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:48
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=48
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:49
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=49
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:50
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=50
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:51
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=51
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:52
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=52
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:53
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=53
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:54
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=54
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:55
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=55
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:56
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=56
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:57
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=57
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:58
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=58
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:59
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=59
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:60
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=60
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:61
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=61
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:62
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=62
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:63
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=63
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:64
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=64
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:65
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=65
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:66
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=66
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:67
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=67
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:68
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=68
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:69
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=69
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:70
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=70
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:71
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=71
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:72
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=72
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:73
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=73
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:74
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=74
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:75
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=75
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:76
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=76
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:77
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=77
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:78
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=78
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:79
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=79
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:80
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=80
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:81
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=81
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:82
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=82
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:83
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=83
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:84
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=84
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:85
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=85
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:86
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=86
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:87
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=87
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:88
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=88
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:89
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=89
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:90
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=90
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:91
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=91
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:92
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=92
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:93
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=93
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:94
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=94
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:95
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=95
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:96
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=96
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:97
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=97
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:98
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=98
+Sending Message...1548775365-3-0-10
+saving to redis
+Message Processed, count:99
+MESSAGE IN: ENV:1548775365-3-0-10 POP=1548775365-3-0-10 count=99
+Sending Message...1548775365-3-0-10
+saving to redis
+Stoping Experiment
+Message Processed, count:100
+Start: None

@@ -1,0 +1,53 @@
+{
+  "timeSeries": [
+    {
+      "metric": {
+        "labels": {
+          "status": "ok",
+          "trigger_type": "google.pubsub.topic.publish",
+          "memory": "256"
+        },
+        "type": "cloudfunctions.googleapis.com/function/execution_count"
+      },
+      "resource": {
+        "type": "cloud_function",
+        "labels": {
+          "project_id": "evocloud",
+          "region": "us-central1",
+          "function_name": "main"
+        }
+      },
+      "metricKind": "DELTA",
+      "valueType": "INT64",
+      "points": [
+        {
+          "interval": {
+            "startTime": "2019-01-29T15:24:00Z",
+            "endTime": "2019-01-29T15:25:00Z"
+          },
+          "value": {
+            "int64Value": "40"
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-01-29T15:23:00Z",
+            "endTime": "2019-01-29T15:24:00Z"
+          },
+          "value": {
+            "int64Value": "64"
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-01-29T15:22:00Z",
+            "endTime": "2019-01-29T15:23:00Z"
+          },
+          "value": {
+            "int64Value": "4"
+          }
+        }
+      ]
+    }
+  ]
+}

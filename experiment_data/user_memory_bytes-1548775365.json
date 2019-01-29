@@ -1,0 +1,230 @@
+{
+  "timeSeries": [
+    {
+      "metric": {
+        "labels": {
+          "trigger_type": "google.pubsub.topic.publish",
+          "memory": "256"
+        },
+        "type": "cloudfunctions.googleapis.com/function/user_memory_bytes"
+      },
+      "resource": {
+        "type": "cloud_function",
+        "labels": {
+          "region": "us-central1",
+          "function_name": "main",
+          "project_id": "evocloud"
+        }
+      },
+      "metricKind": "DELTA",
+      "valueType": "DISTRIBUTION",
+      "points": [
+        {
+          "interval": {
+            "startTime": "2019-01-29T15:24:00Z",
+            "endTime": "2019-01-29T15:25:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "count": "40",
+              "mean": 89396019.2,
+              "sumOfSquaredDeviation": 535150046111334.69,
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 110,
+                  "growthFactor": 1.05,
+                  "scale": 10485760
+                }
+              },
+              "bucketCounts": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "3",
+                "0",
+                "24",
+                "10",
+                "3"
+              ]
+            }
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-01-29T15:23:00Z",
+            "endTime": "2019-01-29T15:24:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "count": "64",
+              "mean": 87250495.999999985,
+              "sumOfSquaredDeviation": 692290263449599.62,
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 110,
+                  "growthFactor": 1.05,
+                  "scale": 10485760
+                }
+              },
+              "bucketCounts": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "11",
+                "0",
+                "38",
+                "15"
+              ]
+            }
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-01-29T15:22:00Z",
+            "endTime": "2019-01-29T15:23:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "count": "4",
+              "mean": 80934912,
+              "sumOfSquaredDeviation": 16777216,
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 110,
+                  "growthFactor": 1.05,
+                  "scale": 10485760
+                }
+              },
+              "bucketCounts": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "4"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
