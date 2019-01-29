@@ -1,10 +1,10 @@
 import google_producer
 import google_controller
-import time
 import redis
 import os
 import process_logs
 import logging
+import time
 import pytz
 import datetime
 
@@ -134,11 +134,11 @@ if __name__ == '__main__':
     PROJECT_PATH = r'/Users/mariogarcia-valdez/evocloud/'
     start_time = datetime.datetime.fromtimestamp(time.time(), pytz.utc)
     tz = pytz.timezone('UTC')
-    logger.info("Start: {}".format(print( tz.normalize(start_time.astimezone(tz)).strftime('%Y-%m-%dT%H:%M:%S.%fZ'))))
+    logger.info("Start: {}".format(tz.normalize(start_time.astimezone(tz)).strftime('%Y-%m-%dT%H:%M:%S.%fZ')))
     experiment(conf)
 
     finish_time = datetime.datetime.fromtimestamp(time.time(), pytz.utc)
-    logger.info("Start: {}".format(print(tz.normalize(finish_time.astimezone(tz)).strftime('%Y-%m-%dT%H:%M:%S.%fZ'))))
+    logger.info("Start: {}".format(tz.normalize(finish_time.astimezone(tz)).strftime('%Y-%m-%dT%H:%M:%S.%fZ')))
 
     data_folder = process_logs.process_logs(conf['EXPERIMENT_ID'])
     #print ("python -m cocopp -o "+ DESTINATION_PATH + str(conf['EXPERIMENT_ID'])+ " " + PROJECT_PATH + data_folder[2:])
