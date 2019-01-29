@@ -39,8 +39,8 @@ conf = {
     'EXPERIMENT_ID' : int(time.time()),
      #For paper:
     'FUNCTIONS' : (3,),
-    'DIMENSIONS' : (10, ),       #(2,3,5,10,20)
-    'INSTANCES' : range(1)    #range(1,6)+range(41, 51)
+    'DIMENSIONS' : (20, ),       #(2,3,5,10,20)
+    'INSTANCES' : list(range(1,6)) + list(range(41, 51))
 
 }
 
