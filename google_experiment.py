@@ -40,7 +40,7 @@ conf = {
      #For paper:
     'FUNCTIONS' : (3,),
     'DIMENSIONS' : (20, ),       #(2,3,5,10,20)
-    'INSTANCES' : list(range(1,6)) + list(range(41, 51))
+    'INSTANCES' : (1,2)  #list(range(1,6)) + list(range(41, 51))
 
 }
 
@@ -114,6 +114,8 @@ def experiment(conf):
                 print(function,dim, instance )
                 print ("First Messages Sent")
                 print ("Begin Message Loop")
+
+                time.sleep(60)
 
                 google_controller.experiment(env)
 

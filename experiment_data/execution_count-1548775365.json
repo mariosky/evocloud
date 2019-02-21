@@ -12,9 +12,9 @@
       "resource": {
         "type": "cloud_function",
         "labels": {
-          "project_id": "evocloud",
           "region": "us-central1",
-          "function_name": "main"
+          "function_name": "main",
+          "project_id": "evocloud"
         }
       },
       "metricKind": "DELTA",
@@ -22,29 +22,65 @@
       "points": [
         {
           "interval": {
-            "startTime": "2019-01-29T15:24:00Z",
-            "endTime": "2019-01-29T15:25:00Z"
+            "startTime": "2019-02-11T21:28:00Z",
+            "endTime": "2019-02-11T21:29:00Z"
           },
           "value": {
-            "int64Value": "40"
+            "int64Value": "35"
           }
         },
         {
           "interval": {
-            "startTime": "2019-01-29T15:23:00Z",
-            "endTime": "2019-01-29T15:24:00Z"
+            "startTime": "2019-02-11T21:27:00Z",
+            "endTime": "2019-02-11T21:28:00Z"
           },
           "value": {
-            "int64Value": "64"
+            "int64Value": "42"
           }
         },
         {
           "interval": {
-            "startTime": "2019-01-29T15:22:00Z",
-            "endTime": "2019-01-29T15:23:00Z"
+            "startTime": "2019-02-11T21:26:00Z",
+            "endTime": "2019-02-11T21:27:00Z"
           },
           "value": {
-            "int64Value": "4"
+            "int64Value": "44"
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-02-11T21:25:00Z",
+            "endTime": "2019-02-11T21:26:00Z"
+          },
+          "value": {
+            "int64Value": "42"
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-02-11T21:24:00Z",
+            "endTime": "2019-02-11T21:25:00Z"
+          },
+          "value": {
+            "int64Value": "38"
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-02-11T21:23:00Z",
+            "endTime": "2019-02-11T21:24:00Z"
+          },
+          "value": {
+            "int64Value": "31"
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2019-02-11T21:22:00Z",
+            "endTime": "2019-02-11T21:23:00Z"
+          },
+          "value": {
+            "int64Value": "11"
           }
         }
       ]
